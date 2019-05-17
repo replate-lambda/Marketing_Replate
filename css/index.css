@@ -148,7 +148,10 @@ span {
 }
 .page-container {
   height: 100%;
-  background: #453121;
+  background-image: url('../../images/bread-color-copyspace-1565982.jpg');
+  background-position: center;
+  background-size: 100%;
+  background-color: #453121;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -158,7 +161,7 @@ span {
   max-width: 600px;
   height: 600px;
   background: #ded888;
-  border: 20px solid #8d9a39;
+  border: 20px outset #8d9a39;
   border-radius: 10px;
   margin: 0 auto;
   display: flex;
@@ -173,17 +176,25 @@ span {
 }
 .page-container header h1 {
   padding-bottom: 10px;
+  font-family: 'Kalam', cursive;
+}
+.page-container header p {
+  font-family: 'Kalam', cursive;
 }
 .form-container .head {
   padding-bottom: 20px;
 }
-.form-container .head .num1 {
-  border: 1px solid black;
-  padding: 1.2px 6px;
-  border-radius: 50%;
-}
 .form-container .head span {
   font-size: 2rem;
+}
+.form-container .head .num1 {
+  border: 1px solid black;
+  padding: 1.2px 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.form-container .head .cto {
+  font-family: 'Kalam', cursive;
 }
 .form-container .forms {
   height: 260px;
@@ -192,9 +203,23 @@ span {
   align-items: center;
   flex-direction: column;
 }
+.form-container .forms .text-form span {
+  font-family: 'Kalam', cursive;
+  font-style: bold;
+}
 .form-container .forms .text-form input {
   width: 260px;
 }
 .form-container .forms .sign-up-btn {
   width: 100%;
+  height: 35px;
+  border: 2px solid #515657;
+  border-radius: 10px;
+  background: #767b95;
+  font-size: 2rem;
+}
+.form-container .forms .sign-up-btn:hover {
+  background: #dbddcf;
+  border: 2px solid #767b95;
+  color: #515657;
 }
