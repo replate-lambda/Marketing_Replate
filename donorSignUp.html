@@ -17,37 +17,80 @@
                     <p>Thanks for your interest!</p>
                 </div>
             </header>
+<!--Form elements container-->
             <div class="form-container">
-                <div class="head">
-                    <span class="num1">1</span>
+<!--account sign up form-->
+                <div class="head account-head">
+                    <span class="num">1</span>
                     <span class="cto">Create Your Account</span>
                 </div>
-                <div class="forms">
+                <div class="form account-form">
                     <form class="text-form">
-                        <span>Name:</span><br>
+                        <span>Name</span><br>
                         <input type="text" name="company-name" placeholder="John Smith">
                     </form>
                     <form class="text-form">
-                        <span>Phone:</span><br>
+                        <span>Phone</span><br>
                         <input type="text" name="phone" placeholder="(555)555-1294">
                     </form>
                     <form class="text-form">
-                        <span>E-mail:</span><br>
+                        <span>E-mail</span><br>
                         <input type="text" name="email" placeholder="example@gmail.com">
                     </form>
                     <form class="text-form">
-                        <span>Password:</span><br>
+                        <span>Password</span><br>
                         <input type="text" name="Password">
                     </form>
                     <form class="text-form">
-                        <span>Repeat Password:</span><br>
+                        <span>Repeat Password</span><br>
                         <input type="text" name="repeat-password">
                     </form>
-                    <button class="sign-up-btn">Continue</button>
+                    <button class="btn continue">Continue</button>
+                </div>
+<!--Business location sign up form; set to' display: hidden' by default-->
+                <div class="head business-head hidden">
+                    <span class="num">2</span>
+                    <span class="cto">Your Business Location</span>
+                </div>
+                <div class="form business-form hidden">
+                    <form class="text-form">
+                        <span>Office Name</span><br>
+                        <input type="text" name="company-name">
+                    </form>
+                    <form class="text-form">
+                        <span>Office Address</span><br>
+                        <input type="text" name="phone">
+                    </form>
+                    <form class="text-form">
+                        <span>Office E-mail (optional)</span><br>
+                        <input type="text" name="email">
+                    </form>
+                    <button class="btn return">Go back</button>
+                    <button class="btn sign-up">Sign Up</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
+<script>
+    const accountHead = document.querySelector(".account-head");
+    const accountForm = document.querySelector(".account-form");
+    const businessHead = document.querySelector(".business-head");
+    const businessForm = document.querySelector(".business-form");
+    const continueBtn = document.querySelector(".continue");
+    const returnBtn = document.querySelector(".return");
+    continueBtn.addEventListener('click', (e) => {
+        businessHead.classList.remove("hidden");
+        businessForm.classList.remove("hidden");
+        accountHead.classList.add("hidden");
+        accountForm.classList.add("hidden");
+    });
+    returnBtn.addEventListener('click', (e) => {
+        businessHead.classList.add("hidden");
+        businessForm.classList.add("hidden");
+        accountHead.classList.remove("hidden");
+        accountForm.classList.remove("hidden");
+    });
+</script>
 
 </html>

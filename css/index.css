@@ -157,10 +157,10 @@ span {
   align-items: center;
 }
 .page-container .sign-up-container {
-  width: 600px;
-  max-width: 600px;
-  height: 600px;
-  padding: 40px;
+  width: 650px;
+  max-width: 650px;
+  height: 650px;
+  padding: 20px;
   background: #ded888;
   border: 20px outset #8d9a39;
   border-radius: 10px;
@@ -170,7 +170,7 @@ span {
   align-items: center;
 }
 .page-container header {
-  width: 48%;
+  width: 50%;
   height: 500px;
 }
 .page-container header .header-content {
@@ -189,7 +189,7 @@ span {
   font-size: 2rem;
 }
 .form-container {
-  width: 48%;
+  width: 50%;
   height: 500px;
 }
 .form-container .head {
@@ -199,7 +199,7 @@ span {
 .form-container .head span {
   font-size: 2rem;
 }
-.form-container .head .num1 {
+.form-container .head .num {
   border: 1px solid black;
   padding: 1.2px 8px;
   border-radius: 50%;
@@ -208,23 +208,34 @@ span {
 .form-container .head .cto {
   font-family: 'Kalam', cursive;
 }
-.form-container .forms {
+.form-container .account-form {
   height: 340px;
+}
+.form-container .business-form {
+  height: 280px;
+}
+.form-container .form {
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
 }
-.form-container .forms .text-form {
+.form-container .form .text-form {
   width: 100%;
 }
-.form-container .forms .text-form span {
+.form-container .form .text-form span {
   font-family: 'Roboto', sans-serif;
 }
-.form-container .forms .text-form input {
+.form-container .form .text-form input {
   width: 100%;
+  background: #dbddcf;
+  padding: 4px 0;
+  border-radius: 3px;
+  border: 1px solid #767b95;
+  font-size: 1.6rem;
 }
-.form-container .forms .sign-up-btn {
+.form-container .form .btn {
   width: 100%;
   height: 35px;
   border: 2px solid #515657;
@@ -232,8 +243,11 @@ span {
   background: #767b95;
   font-size: 2rem;
 }
-.form-container .forms .sign-up-btn:hover {
+.form-container .form .btn:hover {
   background: #dbddcf;
   border: 2px solid #767b95;
   color: #515657;
+}
+.form-container .hidden {
+  display: none;
 }
