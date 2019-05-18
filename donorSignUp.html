@@ -5,43 +5,92 @@
   <link href="css/index.css" rel="stylesheet">
   <title>Donor - Sign Up</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Kalam|Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="sign-up-container">
-        <header>
-            <h1>Donor Sign Up</h1>
-            <p>Thanks for your interest</p>
-        </header>
-        <div class="form-container">
-            <div class="head">
-                <span>1</span><h3>Create Your Account</h3>
+    <div class="page-container">
+        <div class="sign-up-container">
+            <header>
+                <div class="header-content">
+                    <h1>Donor Sign Up</h1>
+                    <p>Thanks for your interest!</p>
+                </div>
+            </header>
+<!--Form elements container-->
+            <div class="form-container">
+<!--account sign up form-->
+                <div class="head account-head">
+                    <span class="num">1</span>
+                    <span class="head-title">Create Your Account</span>
+                </div>
+                <div class="form account-form">
+                    <form class="text-form">
+                        <span>Name</span><br>
+                        <input type="text" name="company-name" placeholder="John Smith">
+                    </form>
+                    <form class="text-form">
+                        <span>Phone</span><br>
+                        <input type="text" name="phone" placeholder="(555)555-1294">
+                    </form>
+                    <form class="text-form">
+                        <span>E-mail</span><br>
+                        <input type="text" name="email" placeholder="example@gmail.com">
+                    </form>
+                    <form class="text-form">
+                        <span>Password</span><br>
+                        <input type="text" name="Password">
+                    </form>
+                    <form class="text-form">
+                        <span>Repeat Password</span><br>
+                        <input type="text" name="repeat-password">
+                    </form>
+                    <button class="btn continue">Continue</button>
+                </div>
+<!--Business location sign up form; set to' display: hidden' by default-->
+                <div class="head business-head hidden">
+                    <span class="num">2</span>
+                    <span class="head-title">Your Business Location</span>
+                </div>
+                <div class="form business-form hidden">
+                    <form class="text-form">
+                        <span>Business Name</span><br>
+                        <input type="text" name="company-name">
+                    </form>
+                    <form class="text-form">
+                        <span>Business Address</span><br>
+                        <input type="text" name="phone">
+                    </form>
+                    <form class="text-form">
+                        <span>Business E-mail (optional)</span><br>
+                        <input type="text" name="email"  placeholder="example@gmail.com">
+                    </form>
+                    <button class="btn return">Go back</button>
+                    <button class="btn sign-up">Sign Up</button>
+                </div>
             </div>
-            <div class="forms">
-                <form>
-                    <span>Comapany name:</span><br>
-                    <input type="text" name="company-name">
-                </form>
-                <form>
-                    <span>Phone:</span><br>
-                    <input type="text" name="phone">
-                </form>
-                <form>
-                    <span>E-mail:</span><br>
-                    <input type="text" name="email">
-                </form>
-                <form>
-                    <span>Password:</span><br>
-                    <input type="text" name="Password">
-                </form>
-                <form>
-                    <span>Repeat Password:</span><br>
-                    <input type="text" name="repeat-password">
-                </form>
-            </div>
-            <button>Continue</button>
         </div>
     </div>
 </body>
+<script>
+    const accountHead = document.querySelector(".account-head");
+    const accountForm = document.querySelector(".account-form");
+    const businessHead = document.querySelector(".business-head");
+    const businessForm = document.querySelector(".business-form");
+    const continueBtn = document.querySelector(".continue");
+    const returnBtn = document.querySelector(".return");
+    continueBtn.addEventListener('click', (e) => {
+        businessHead.classList.remove("hidden");
+        businessForm.classList.remove("hidden");
+        accountHead.classList.add("hidden");
+        accountForm.classList.add("hidden");
+    });
+    returnBtn.addEventListener('click', (e) => {
+        businessHead.classList.add("hidden");
+        businessForm.classList.add("hidden");
+        accountHead.classList.remove("hidden");
+        accountForm.classList.remove("hidden");
+    });
+</script>
 
 </html>
