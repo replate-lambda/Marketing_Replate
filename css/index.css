@@ -136,6 +136,12 @@ body {
 html {
   font-size: 62.5%;
 }
+body {
+  background-image: url('../../images/bread-color-copyspace-1565982.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #453121;
+}
 h1 {
   font-size: 3.2rem;
 }
@@ -146,14 +152,19 @@ p,
 span {
   font-size: 1.6rem;
 }
-body {
-  background-color: #765424;
+.homepage-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.h1div h1 {
+.homepage-container h1 {
+  font-size: 6rem;
+  font-family: 'Kalam', cursive;
   text-align: center;
-  color: black;
-  margin-top: 150px;
-  margin-bottom: 60px;
+  color: #8d9a39;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000;
 }
 .divs-container {
   margin: 0 auto;
@@ -162,33 +173,35 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-.divs-container .div1 {
+.divs-container .content-box {
   margin: 20px 20px;
-  border: 2px solid black;
-  width: 25%;
-  height: 70%;
+  border: 10px solid #8d9a39;
+  border-radius: 10px;
+  width: 325px;
+  height: 325px;
+  background-color: #ded888;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.divs-container .div2 {
-  margin: 20px 20px;
+.divs-container .content-box .selector {
   border: 2px solid black;
-  width: 25%;
-  height: 70%;
-}
-.divs-container .div3 {
-  margin: 20px 20px;
-  border: 2px solid black;
-  width: 25%;
-  height: 70%;
+  width: 100px;
+  height: 100px;
 }
 .divs-container .h2div {
   text-align: center;
-  padding-top: 150px;
 }
 .divs-container h2 {
+  font-family: 'Kalam', cursive;
   font-size: 3rem;
 }
 .divs-container .pdiv {
   text-align: center;
   font-size: 1.5rem;
   padding-top: 20px;
+}
+.divs-container p {
+  font-family: 'Kalam', cursive;
 }
