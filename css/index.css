@@ -136,6 +136,12 @@ body {
 html {
   font-size: 62.5%;
 }
+body {
+  background-image: url('../../images/bread-color-copyspace-1565982.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: #453121;
+}
 h1 {
   font-size: 3.2rem;
 }
@@ -145,4 +151,167 @@ h3 {
 p,
 span {
   font-size: 1.6rem;
+}
+.homepage-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.homepage-container h1 {
+  font-size: 6rem;
+  font-family: 'Kalam', cursive;
+  text-align: center;
+  color: #8d9a39;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 5px 5px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px 1px 0 #000;
+}
+.divs-container {
+  margin: 0 auto;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.divs-container .div1 {
+  margin: 20px 20px;
+  border: 10px solid #8d9a39;
+  border-radius: 10px;
+  width: 25%;
+  height: 70%;
+  background-color: #ded888;
+}
+.divs-container .div2 {
+  margin: 20px 20px;
+  border: 10px solid #8d9a39;
+  border-radius: 10px;
+  width: 25%;
+  height: 70%;
+  background-color: #ded888;
+}
+.divs-container .div3 {
+  margin: 20px 20px;
+  border: 10px solid #8d9a39;
+  border-radius: 10px;
+  width: 25%;
+  height: 70%;
+  background-color: #ded888;
+}
+.divs-container .h2div {
+  text-align: center;
+  padding-top: 150px;
+}
+.divs-container h2 {
+  font-family: 'Kalam', cursive;
+  font-size: 3rem;
+}
+.divs-container .pdiv {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 20px;
+}
+.divs-container p {
+  font-family: 'Kalam', cursive;
+}
+.page-container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-container .sign-up-container {
+  width: 650px;
+  max-width: 650px;
+  height: 650px;
+  padding: 20px;
+  background: #ded888;
+  border: 20px outset #8d9a39;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-container header {
+  width: 50%;
+  height: 500px;
+}
+.page-container header .header-content {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container header .header-content h1 {
+  padding-bottom: 10px;
+  font-size: 3.6rem;
+  font-family: 'Kalam', cursive;
+}
+.page-container header .header-content p {
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
+}
+.form-container {
+  width: 50%;
+  height: 500px;
+}
+.form-container .head {
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+.form-container .head span {
+  font-size: 2rem;
+}
+.form-container .head .num {
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid black;
+  padding: 1.2px 8px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.form-container .head .head-title {
+  font-family: 'Kalam', cursive;
+}
+.form-container .account-form {
+  height: 340px;
+}
+.form-container .business-form {
+  height: 275px;
+}
+.form-container .form {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.form-container .form .text-form {
+  width: 100%;
+}
+.form-container .form .text-form span {
+  font-family: 'Roboto', sans-serif;
+}
+.form-container .form .text-form input {
+  width: 100%;
+  background: #dbddcf;
+  padding: 4px 0;
+  border-radius: 3px;
+  border: 1px solid #767b95;
+  font-size: 1.6rem;
+}
+.form-container .form .btn {
+  width: 100%;
+  height: 35px;
+  border: 2px solid #515657;
+  border-radius: 10px;
+  background: #767b95;
+  font-size: 2rem;
+}
+.form-container .form .btn:hover {
+  background: #dbddcf;
+  border: 2px solid #767b95;
+  color: #515657;
+}
+.form-container .hidden {
+  display: none;
 }
