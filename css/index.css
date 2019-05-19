@@ -173,13 +173,8 @@ span {
   display: flex;
   justify-content: space-evenly;
 }
-<<<<<<< HEAD
-.divs-container .content-box {
-=======
-
 .divs-container .content-box {
   margin: 20px 20px;
->>>>>>> 24aacffe4463e278558924b57780fb6ab059d9ab
   border: 10px solid #8d9a39;
   border-radius: 10px;
   width: 325px;
@@ -197,10 +192,6 @@ span {
 }
 .divs-container .h2div {
   text-align: center;
-<<<<<<< HEAD
-=======
-
->>>>>>> 24aacffe4463e278558924b57780fb6ab059d9ab
 }
 .divs-container h2 {
   font-family: 'Kalam', cursive;
@@ -214,7 +205,6 @@ span {
 .divs-container p {
   font-family: 'Kalam', cursive;
 }
-
 .page-container {
   height: 100%;
   display: flex;
@@ -279,6 +269,9 @@ span {
 }
 .form-container .business-form {
   height: 275px;
+}
+.form-container .business-form .submit-form {
+  width: 100%;
 }
 .form-container .form {
   width: 90%;
