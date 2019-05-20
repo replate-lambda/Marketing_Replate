@@ -9,3 +9,4 @@
 - [ ]  Descriptions about the product and about the features it provides would be key.
 - [ ]  For a second page, you could do an about us section that includes images of the members of your team, and links to one another's socials/Github.
 ![background image](/assets/images/Background.jpg)
+
