@@ -8,4 +8,4 @@
 - [ ]  For this Marketing site's home page you need to have content and copy that relates to the product that your team is working on.
 - [ ]  Descriptions about the product and about the features it provides would be key.
 - [ ]  For a second page, you could do an about us section that includes images of the members of your team, and links to one another's socials/Github.
-![background image](../../images/background.jpg)
+![background image](/assets/images/background.jpg)
