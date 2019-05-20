@@ -13,3 +13,18 @@ returnBtn.addEventListener('click', (e) => {
     businessSlide.classList.add("hidden");
     accountSlide.classList.remove("hidden");
 });
+
+var inputData = {};
+    
+
+class User {
+    constructor(formData) {
+        this.fName = formData.fName;
+        this.phoneNum = formData.phoneNum;
+        this.email = formData.email;
+        this.password = formData.password;
+        this.businessName = formData.businessName;
+        this.businessAddress = formData.businessAddress;
+        this.businessEmail = formData.businessEmail;
+    }
+}
