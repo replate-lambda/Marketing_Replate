@@ -194,6 +194,9 @@ span {
   justify-content: center;
   color: #c46128;
 }
+.divs-container .content-box .selector i:hover {
+  color: #e59308;
+}
 .divs-container .h2div {
   text-align: center;
 }
@@ -210,6 +213,9 @@ span {
 .divs-container .pdiv p {
   font-family: 'Kalam', cursive;
   color: #e59308;
+}
+.divs-container a {
+  text-decoration: none;
 }
 .page-container {
   height: 100%;
