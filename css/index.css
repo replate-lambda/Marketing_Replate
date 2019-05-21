@@ -186,9 +186,13 @@ span {
   align-items: center;
 }
 .divs-container .content-box .selector {
-  border: 2px solid black;
   width: 100px;
   height: 100px;
+}
+.divs-container .content-box .selector i {
+  display: flex;
+  justify-content: center;
+  color: #c46128;
 }
 .divs-container .h2div {
   text-align: center;
@@ -196,14 +200,16 @@ span {
 .divs-container h2 {
   font-family: 'Kalam', cursive;
   font-size: 3rem;
+  color: #e59308;
 }
 .divs-container .pdiv {
   text-align: center;
   font-size: 1.5rem;
   padding-top: 20px;
 }
-.divs-container p {
+.divs-container .pdiv p {
   font-family: 'Kalam', cursive;
+  color: #e59308;
 }
 .page-container {
   height: 100%;
