@@ -154,9 +154,15 @@ span {
 }
 .homepage-container {
   height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .homepage-container {
+    height: 1000px;
+  }
 }
 .homepage-container h1 {
   font-size: 6rem;
@@ -168,7 +174,7 @@ span {
 }
 @media (max-width: 500px) {
   .homepage-container h1 {
-    margin-bottom: 75px;
+    margin: 20px 0;
   }
 }
 .divs-container {
@@ -180,12 +186,12 @@ span {
 }
 @media (max-width: 500px) {
   .divs-container {
-    display: flex;
+    height: 795px;
     flex-direction: column;
+    align-items: center;
   }
 }
 .divs-container .content-box {
-  margin: 20px 20px;
   border: 10px solid #8d9a39;
   border-radius: 10px;
   width: 325px;
@@ -200,16 +206,16 @@ span {
   .divs-container .content-box {
     width: 225px;
     height: 225px;
-    margin-top: 10px;
   }
 }
 .divs-container .content-box .selector {
   width: 100px;
-  height: 100px;
-}
-.divs-container .content-box .selector i {
+  height: 80px;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+.divs-container .content-box .selector i {
   color: #c46128;
 }
 .divs-container .content-box .selector i:hover {
@@ -233,7 +239,11 @@ span {
   color: #e59308;
 }
 .divs-container a {
+  width: 100px;
+  height: 80px;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
 .page-container {
   height: 100%;
@@ -339,4 +349,43 @@ span {
 }
 .form-container .hidden {
   display: none;
+}
+.dashboard-container {
+  height: 100%;
+  width: 80%;
+  margin: 0 auto;
+  background: #ded888;
+  border-top: 20px solid #8d9a39;
+  border-bottom: 20px solid #8d9a39;
+}
+header {
+  height: 120px;
+}
+.location-content {
+  width: 100%;
+  height: 200px;
+}
+.location-content .location {
+  display: inline-block;
+}
+.location-content .another-location {
+  display: inline-block;
+}
+.donation-content {
+  height: 120px;
+}
+.icon-container {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #515657;
+  border-radius: 50%;
+  background: #767b95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-container .create-icon {
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #515657;
 }
