@@ -155,14 +155,11 @@ span {
 .homepage-container {
   height: 100%;
   width: 100%;
+  padding: 0 10%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-}
-@media (max-width: 500px) {
-  .homepage-container {
-    height: 1000px;
-  }
+  align-items: center;
 }
 .homepage-container h1 {
   font-size: 6rem;
@@ -178,11 +175,13 @@ span {
   }
 }
 .divs-container {
-  margin: 0 auto;
-  width: 80%;
-  height: 400px;
+  width: 100%;
+  height: 690px;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
 }
 @media (max-width: 500px) {
   .divs-container {
@@ -194,7 +193,7 @@ span {
 .divs-container .content-box {
   border: 10px solid #8d9a39;
   border-radius: 10px;
-  width: 325px;
+  width: 275px;
   height: 325px;
   background-color: #ded888;
   display: flex;
@@ -351,12 +350,15 @@ span {
   display: none;
 }
 .dashboard-container {
-  height: 100%;
+  height: 800px;
   width: 80%;
+  max-width: 800px;
   margin: 0 auto;
   background: #ded888;
+  padding: 20px;
   border-top: 20px solid #8d9a39;
   border-bottom: 20px solid #8d9a39;
+  overflow: hidden;
 }
 header {
   height: 120px;
@@ -365,14 +367,47 @@ header {
   width: 100%;
   height: 200px;
 }
-.location-content .location {
-  display: inline-block;
-}
-.location-content .another-location {
-  display: inline-block;
+.location-content .add-location {
+  display: flex;
+  align-items: center;
 }
 .donation-content {
   height: 120px;
+}
+.donation-content .donation-request {
+  display: flex;
+  align-items: center;
+}
+.calendar-container {
+  height: 225px;
+  width: 660px;
+}
+.calendar-container h3 {
+  margin: 20px auto;
+}
+.calendar-container .calendar {
+  width: 100%;
+  height: 150px;
+  margin: 20px auto;
+  border: 2px solid black;
+  display: flex;
+  background: #767b95;
+}
+.calendar-container .calendar .day-block {
+  width: 20%;
+  height: 146px;
+  border: 1px solid black;
+}
+.calendar-container .calendar .date {
+  height: 45px;
+  padding: 10px 5px;
+  border-bottom: 1px solid black;
+  background: #767b95;
+}
+.calendar-container .calendar .pickup-log {
+  height: 100px;
+  padding: 10px 5px;
+  background: #dbddcf;
 }
 .icon-container {
   width: 30px;
@@ -380,6 +415,7 @@ header {
   border: 2px solid #515657;
   border-radius: 50%;
   background: #767b95;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
