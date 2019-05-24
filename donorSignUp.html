@@ -25,29 +25,29 @@
                         <span class="num">1</span>
                         <span class="head-title">Create Your Account</span>
                     </div>
-                    <div class="form account-form">
-                        <form class="text-form">
+                    <form name="sign-up-form" action="/JS/sign-up.js" class="account-form text-form" onsubmit='return false;'>
+                        <div class="input-container">
                             <span>Name</span><br>
-                            <input type="text" class="name" placeholder="John Smith">
-                        </form>
-                        <form class="text-form">
+                            <input name="name" type="text" placeholder="John Smith">
+                        </div>
+                        <div class="input-container">
                             <span>Phone</span><br>
-                            <input type="text" class="phone" placeholder="(555)555-1294">
-                        </form>
-                        <form class="text-form">
+                            <input name="phone" type="tel" placeholder="(555)555-1234" value="">
+                        </div>
+                        <div class="input-container">
                             <span>E-mail</span><br>
-                            <input type="text" class="email" placeholder="example@gmail.com">
-                        </form>
-                        <form class="text-form">
+                            <input name="email" type="email" placeholder="example@gmail.com">
+                        </div>
+                        <div class="input-container">
                             <span>Password</span><br>
-                            <input type="password" class="password">
-                        </form>
-                        <form class="text-form">
+                            <input name="password" type="password">
+                        </div>
+                        <div class="input-container">
                             <span>Repeat Password</span><br>
-                            <input type="password" class="repeat-password">
-                        </form>
+                            <input name="repeat-password" type="password">
+                        </div>
                         <button class="btn continue">Continue</button>
-                    </div>
+                    </form>
                 </div>
 <!--Business location sign up form; set to' display: hidden' by default-->
                 <div class="business-slide hidden">
@@ -55,24 +55,25 @@
                         <span class="num">2</span>
                         <span class="head-title">Your Business Location</span>
                     </div>
-                    <div class="form business-form">
-                        <form class="text-form">
+                    <form name="business-sign-up-form" action="/JS/sign-up.js" class="business-form text-form" onsubmit='return false;'>
+                        <div class="input-container">
                             <span>Business Name</span><br>
-                            <input type="text" class="business-name">
-                        </form>
-                        <form class="text-form">
+                            <input name="business-name" type="text">
+                        </div>
+                        <div class="input-container">
                             <span>Business Address</span><br>
-                            <input type="text" class="business-phone">
-                        </form>
-                        <form class="text-form">
+                            <input name="business-address" type="text">
+                        </div>
+                        <div class="input-container">
                             <span>Business E-mail (optional)</span><br>
-                            <input type="text" class="business-email"  placeholder="example@gmail.com">
-                        </form>
+                            <input name="business-email" type="email" placeholder="example@gmail.com">
+                        </div>
                         <button class="btn return">Go back</button>
-                        <form  class="submit-form" action="dashboard.html">
-                            <button class="btn sign-up" type="submit">Sign Up</button>
-                        </form>
-                    </div>
+                    </form>
+                    
+                    <form class="submit-form" action="dashboard.html">
+                        <button class="btn sign-up" type="submit">Sign Up</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -80,5 +81,6 @@
 </body>
 
 <script src="JS\sign-up.js"></script>
+<script src='JS\dashboard.js'></script>
 
 </html>

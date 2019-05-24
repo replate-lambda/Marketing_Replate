@@ -307,25 +307,26 @@ span {
   height: 340px;
 }
 .form-container .business-form {
-  height: 275px;
+  height: 218px;
 }
 .form-container .business-form .submit-form {
   width: 100%;
 }
-.form-container .form {
+.form-container form {
+  height: 100%;
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-direction: column;
 }
-.form-container .form .text-form {
+.form-container form .input-container {
   width: 100%;
 }
-.form-container .form .text-form span {
+.form-container form .input-container span {
   font-family: 'Roboto', sans-serif;
 }
-.form-container .form .text-form input {
+.form-container form .input-container input {
   width: 100%;
   background: #dbddcf;
   padding: 4px 0;
@@ -333,7 +334,7 @@ span {
   border: 1px solid #767b95;
   font-size: 1.6rem;
 }
-.form-container .form .btn {
+.form-container .btn {
   width: 100%;
   height: 35px;
   border: 2px solid #515657;
@@ -341,10 +342,13 @@ span {
   background: #767b95;
   font-size: 2rem;
 }
-.form-container .form .btn:hover {
+.form-container .btn:hover {
   background: #dbddcf;
   border: 2px solid #767b95;
   color: #515657;
+}
+.form-container .sign-up {
+  margin: 16.6px 0;
 }
 .form-container .hidden {
   display: none;
