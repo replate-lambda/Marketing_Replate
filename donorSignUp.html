@@ -55,7 +55,7 @@
                         <span class="num">2</span>
                         <span class="head-title">Your Business Location</span>
                     </div>
-                    <form name="sign-up-form" action="/JS/sign-up.js" class="business-form text-form" onsubmit='return false;'>
+                    <form name="business-sign-up-form" action="/JS/sign-up.js" class="business-form text-form" onsubmit='return false;'>
                         <div class="input-container">
                             <span>Business Name</span><br>
                             <input name="business-name" type="text">
@@ -66,7 +66,7 @@
                         </div>
                         <div class="input-container">
                             <span>Business E-mail (optional)</span><br>
-                            <input name="business-email" type="email"placeholder="example@gmail.com">
+                            <input name="business-email" type="email" placeholder="example@gmail.com">
                         </div>
                         <button class="btn return">Go back</button>
                     </form>
@@ -74,24 +74,6 @@
                     <form class="submit-form" action="dashboard.html">
                         <button class="btn sign-up" type="submit">Sign Up</button>
                     </form>
-                    <!-- <div class="business-form form">
-                        <form name="sign-up-form" action="/JS/sign-up.js" class="text-form" onsubmit='return false;'>
-                            <span>Business Name</span><br>
-                            <input name="business-name" type="text">
-                        </form>
-                        <form name="sign-up-form" action="/JS/sign-up.js" class="text-form" onsubmit='return false;'>
-                            <span>Business Address</span><br>
-                            <input name="business-address" type="text">
-                        </form>
-                        <form name="sign-up-form" action="/JS/sign-up.js"  class="text-form" onsubmit='return false;'>
-                            <span>Business E-mail (optional)</span><br>
-                            <input name="business-email" type="email"placeholder="example@gmail.com">
-                        </form>
-                        <button class="btn return">Go back</button>
-                        <form class="submit-form" action="dashboard.html">
-                            <button class="btn sign-up" type="submit">Sign Up</button>
-                        </form>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -99,5 +81,6 @@
 </body>
 
 <script src="JS\sign-up.js"></script>
+<script src='JS\dashboard.js'></script>
 
 </html>
