@@ -4,25 +4,24 @@
     max-width: 1000px;
     margin: 0 auto;
     background: @beige;
-    border-left: 20px outset @green;
-    border-right: 20px outset @green;
+    border-left: 20px solid @green;
+    border-right: 20px solid @green;
     overflow: auto;
-}
-
-header {
-    height: 160px;
-    background: @bluegrey;
-    padding: 0 20px;
-    .flex-layout(space-between, center);
-    h1 {
-        font-size: 6rem;
-    }
-    .logo-container {
-        width: auto;
-        height: 100%;
-        img {
+    header {
+        height: 160px;
+        background: @bluegrey;
+        padding: 0 20px;
+        .flex-layout(space-between, center);
+        h1 {
+            font-size: 6rem;
+        }
+        .logo-container {
             width: auto;
             height: 100%;
+            img {
+                width: auto;
+                height: 100%;
+            }
         }
     }
 }
