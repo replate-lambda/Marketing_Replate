@@ -144,13 +144,16 @@ body {
 }
 h1 {
   font-size: 3.2rem;
+  font-family: 'Kalam', cursive;
 }
 h3 {
   font-size: 2rem;
+  font-family: 'Kalam', cursive;
 }
 p,
 span {
   font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
 }
 .homepage-container {
   height: 100%;
@@ -354,56 +357,118 @@ span {
   display: none;
 }
 .dashboard-container {
-  height: 800px;
+  height: 100%;
   width: 80%;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   background: #ded888;
-  padding: 20px;
-  border-top: 20px solid #8d9a39;
-  border-bottom: 20px solid #8d9a39;
-  overflow: hidden;
+  border-left: 20px outset #8d9a39;
+  border-right: 20px outset #8d9a39;
+  overflow: auto;
 }
 header {
-  height: 120px;
+  height: 160px;
+  background: #515657;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 6rem;
+}
+header .logo-container {
+  width: auto;
+  height: 100%;
+}
+header .logo-container img {
+  width: auto;
+  height: 100%;
+}
+.business-location-h3 {
+  font-size: 3rem;
+  padding: 10px 20px;
+  background: #765424;
+  color: #b6a858;
+  border: 5px outset #453121;
 }
 .location-content {
   width: 100%;
   height: 240px;
   display: flex;
+  padding: 10px 0;
+  background: #453121;
 }
 .location-content .location {
-  width: 185px;
+  width: 200px;
   margin: 0 10px;
+  padding: 0 10px;
+  border: 5px solid #515657;
+  border-radius: 10px;
+  background: #767b95;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-.location-content .location .logo-container {
-  width: 100px;
+.location-content .location .business-img-container {
+  width: 120px;
   height: 100px;
   margin: 0 auto;
   background: #515657;
-  border: 5px solid #765424;
+  border: 2px inset #515657;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.location-content .location .logo-container img {
+.location-content .location .business-img-container img {
   width: auto;
   height: 100%;
 }
+.location-content .location .business-info {
+  width: 160px;
+  height: 80px;
+  padding: 5px;
+  background: #8d9a39;
+  border: 2px inset #8d9a39;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.location-content .location .business-info .business-name p {
+  font-family: 'Kalam', cursive;
+  font-size: 2rem;
+}
 .location-content .another-location {
-  width: 185px;
+  width: 200px;
   margin: 0 10px;
   display: flex;
   align-items: center;
 }
 .location-content .another-location .add-location {
+  height: 50px;
   display: flex;
+  justify-content: center;
   align-items: center;
+}
+.location-content .another-location .add-location span {
+  font-size: 2rem;
+}
+.pick-up-scedule-h3 {
+  font-size: 3rem;
+  padding: 10px 20px;
+  background: #765424;
+  color: #b6a858;
+  border: 5px outset #453121;
 }
 .donation-content {
   height: 120px;
+  background: #453121;
+  display: flex;
+  align-content: center;
+  padding: 10px;
 }
 .donation-content .donation-request {
   display: flex;
@@ -450,6 +515,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.icon-container:hover {
+  background-color: #dbddcf;
 }
 .icon-container .create-icon {
   font-size: 3rem;
