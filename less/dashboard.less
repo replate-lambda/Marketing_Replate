@@ -3,10 +3,12 @@
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    background: @darkbrown;
+    background-image: url('../images/repeat-wood-texture.jpg');
+    background-repeat: repeat;
     border-left: 10px solid @green;
     border-right: 10px solid @green;
     @media @tablet {
+        width: 90%;
         height: 1150px;
     }
     header {
@@ -42,10 +44,11 @@
     padding: 10px 20px;
     background: @brown;
     color: @tan;
+    display: flex;
+    align-items: center;
     border-top: 5px outset @darkbrown;
     border-bottom: 5px outset @darkbrown;
     @media @tablet {
-        display: flex;
         justify-content: center;
         padding:  10px 0;
     }
@@ -99,21 +102,6 @@
         margin: 0 10px;
         display: flex;
         align-items: center;
-        .add-location {
-            width: 100%;
-            height: 50px;
-            display: flex;          
-            align-items: center;
-            span {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 2rem;
-                @media @phone {
-                    display: none;
-                }
-            }
-        }
     }
 }
 
@@ -122,10 +110,11 @@
     padding: 10px 20px;
     background: @brown;
     color: @tan;
+    display: flex;
+    align-items: center;
     border-top: 5px outset @darkbrown;
     border-bottom: 5px outset @darkbrown;
     @media @tablet {
-        display: flex;
         justify-content: center;
         padding:  10px 0;
     }
@@ -134,12 +123,8 @@
 .donation-content {
     height: 100px;
     display: flex;
-    align-content: center;
+    align-items: center;
     padding: 10px;
-    .donation-request {
-        display: flex;
-        align-items: center; 
-    }
 }
 
 .calendar-h3 {
@@ -147,10 +132,11 @@
     padding: 10px 20px;
     background: @brown;
     color: @tan;
+    display: flex;
+    align-items: center;
     border-top: 5px outset @darkbrown;
     border-bottom: 5px outset @darkbrown;
     @media @tablet {
-        display: flex;
         justify-content: center;
         padding:  10px 0;
     }
@@ -159,7 +145,6 @@
 .calendar-container {
     height: 270px;
     width: 100%;
-    background: @darkbrown;
     .flex-layout(center, center);
     @media @tablet {
         height: 325px;
@@ -167,7 +152,7 @@
     .calendar {
         width: 80%;
         height: 180px;
-        border: 2px solid black;
+        border: 5px outset @brown;
         display: flex;
         background: @lightblue;
         @media @tablet {
@@ -217,13 +202,32 @@
     }
 }
 
+.selector-container {
+    height: 50px;
+    background: @green;
+    border-radius: 10px;
+    border:3px outset @green;
+    display: flex;          
+    align-items: center;
+    span {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 2rem;
+        margin-right: 10px;
+        @media @phone {
+            display: none;
+        }
+    }
+}
+
 .icon-container{
     width: 30px;
     height: 30px;
     border: 2px solid @bluegrey;
     border-radius: 50%;
     background: @lightblue;
-    margin-right: 10px;
+    margin:  0 10px;
     .flex-layout(center,center);
     &:hover {
         background-color: @lightgrey;
