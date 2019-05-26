@@ -1,22 +1,34 @@
 .dashboard-container {
-    height: 100%;
+    height: 950px;
     width: 80%;
     max-width: 1000px;
     margin: 0 auto;
-    background: @beige;
-    border-left: 20px solid @green;
-    border-right: 20px solid @green;
+    background: @darkbrown;
+    border-left: 10px solid @green;
+    border-right: 10px solid @green;
+    @media @tablet {
+        height: 1150px;
+    }
     header {
         height: 160px;
         background: @bluegrey;
         padding: 0 20px;
         .flex-layout(space-between, center);
+        @media @tablet {
+            height: 300px;
+            flex-direction: column-reverse;
+            justify-content: space-evenly;
+        }
         h1 {
             font-size: 6rem;
         }
         .logo-container {
             width: auto;
             height: 100%;
+            @media @tablet {
+                width: 236px;
+                height: 200px;
+            }
             img {
                 width: auto;
                 height: 100%;
@@ -30,7 +42,13 @@
     padding: 10px 20px;
     background: @brown;
     color: @tan;
-    border: 5px outset @darkbrown;
+    border-top: 5px outset @darkbrown;
+    border-bottom: 5px outset @darkbrown;
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+        padding:  10px 0;
+    }
 }
 
 .location-content {
@@ -38,7 +56,6 @@
     height: 240px;
     display: flex;
     padding: 10px 0;
-    background: @darkbrown;
     .location {
         width: 200px;
         margin: 0 10px;
@@ -78,18 +95,24 @@
         }
     }
     .another-location {
-        width: 200px;
+        width: 100%;
         margin: 0 10px;
         display: flex;
         align-items: center;
         .add-location {
+            width: 100%;
             height: 50px;
-            display: flex;   
-            justify-content: center;       
+            display: flex;          
             align-items: center;
             span {
                 font-size: 2rem;
-            } 
+            }
+            p {
+                font-size: 2rem;
+                @media @phone {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -99,12 +122,17 @@
     padding: 10px 20px;
     background: @brown;
     color: @tan;
-    border: 5px outset @darkbrown;
+    border-top: 5px outset @darkbrown;
+    border-bottom: 5px outset @darkbrown;
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+        padding:  10px 0;
+    }
 }
 
 .donation-content {
-    height: 120px;
-    background: @darkbrown;
+    height: 100px;
     display: flex;
     align-content: center;
     padding: 10px;
@@ -114,34 +142,77 @@
     }
 }
 
+.calendar-h3 {
+    font-size: 3rem;
+    padding: 10px 20px;
+    background: @brown;
+    color: @tan;
+    border-top: 5px outset @darkbrown;
+    border-bottom: 5px outset @darkbrown;
+    @media @tablet {
+        display: flex;
+        justify-content: center;
+        padding:  10px 0;
+    }
+}
+
 .calendar-container {
-    height: 225px;
-    width: 660px;
-    h3 {
-        margin: 20px auto;
+    height: 270px;
+    width: 100%;
+    background: @darkbrown;
+    .flex-layout(center, center);
+    @media @tablet {
+        height: 325px;
     }
     .calendar {
-        width: 100%;
-        height: 150px;
-        margin: 20px auto;
+        width: 80%;
+        height: 180px;
         border: 2px solid black;
         display: flex;
         background: @lightblue;
+        @media @tablet {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            height: 300px;
+        }
         .day-block {
             width: 20%;
-            height: 146px;
+            height: 100%;
             border: 1px solid black;
+            @media @tablet {
+                width: 100%;
+                display: flex;
+            }
         }
         .date {
-            height: 45px;
+            height: 30%;
             padding: 10px 5px;
+            font-size: 2rem;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            align-items: center;
             border-bottom: 1px solid black;
-            background: @lightblue;
+            background: @bluegrey;
+            @media @tablet {
+                height: 100%;
+                width: 30%;
+                justify-content: center;
+            }
         }
         .pickup-log {
-            height: 100px;
+            height: 70%;
             padding: 10px 5px;
-            background: @lightgrey;
+            background: @lightblue;
+            line-height: 1.5;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            @media @tablet {
+                height: 100%;
+                width: 70%;
+                line-height: 1;
+            }
         }
     }
 }
