@@ -9,71 +9,73 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <div class="sign-up-container">
-            <header>
-                <div class="header-content">
-                    <h1>Donor Sign Up</h1>
-                    <p>Thanks for your interest!</p>
-                </div>
-            </header>
-<!--Form elements container-->
-            <div class="form-container">
-<!--account sign up form-->
-                <div class="account-slide">
-                    <div class="head account-head">
-                        <span class="num">1</span>
-                        <span class="head-title">Create Your Account</span>
+    <div class="bg">
+        <div class="page-container">
+            <div class="sign-up-container">
+                <header>
+                    <div class="header-content">
+                        <h1>Donor Sign Up</h1>
+                        <p>Thanks for your interest!</p>
                     </div>
-                    <form name="sign-up-form" action="/JS/sign-up.js" class="account-form text-form" onsubmit='return false;'>
-                        <div class="input-container">
-                            <span>Name</span><br>
-                            <input name="name" type="text" placeholder="John Smith">
+                </header>
+    <!--Form elements container-->
+                <div class="form-container">
+    <!--account sign up form-->
+                    <div class="account-slide">
+                        <div class="head account-head">
+                            <span class="num">1</span>
+                            <span class="head-title">Create Your Account</span>
                         </div>
-                        <div class="input-container">
-                            <span>Phone</span><br>
-                            <input name="phone" type="tel" placeholder="(555)555-1234" value="">
-                        </div>
-                        <div class="input-container">
-                            <span>E-mail</span><br>
-                            <input name="email" type="email" placeholder="example@gmail.com">
-                        </div>
-                        <div class="input-container">
-                            <span>Password</span><br>
-                            <input name="password" type="password">
-                        </div>
-                        <div class="input-container">
-                            <span>Repeat Password</span><br>
-                            <input name="repeat-password" type="password">
-                        </div>
-                        <button class="btn continue">Continue</button>
-                    </form>
-                </div>
-<!--Business location sign up form; set to' display: hidden' by default-->
-                <div class="business-slide hidden">
-                    <div class="head business-head ">
-                        <span class="num">2</span>
-                        <span class="head-title">Your Business Location</span>
+                        <form name="sign-up-form" action="/JS/sign-up.js" class="account-form text-form" onsubmit='return false;'>
+                            <div class="input-container">
+                                <span>Name</span><br>
+                                <input name="name" type="text" placeholder="John Smith">
+                            </div>
+                            <div class="input-container">
+                                <span>Phone</span><br>
+                                <input name="phone" type="tel" placeholder="(555)555-1234" value="">
+                            </div>
+                            <div class="input-container">
+                                <span>E-mail</span><br>
+                                <input name="email" type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="input-container">
+                                <span>Password</span><br>
+                                <input name="password" type="password">
+                            </div>
+                            <div class="input-container">
+                                <span>Repeat Password</span><br>
+                                <input name="repeat-password" type="password">
+                            </div>
+                            <button class="btn continue">Continue</button>
+                        </form>
                     </div>
-                    <form name="business-sign-up-form" action="/JS/sign-up.js" class="business-form text-form" onsubmit='return false;'>
-                        <div class="input-container">
-                            <span>Business Name</span><br>
-                            <input name="business-name" type="text">
+    <!--Business location sign up form; set to' display: hidden' by default-->
+                    <div class="business-slide hidden">
+                        <div class="head business-head ">
+                            <span class="num">2</span>
+                            <span class="head-title">Your Business Location</span>
                         </div>
-                        <div class="input-container">
-                            <span>Business Address</span><br>
-                            <input name="business-address" type="text">
-                        </div>
-                        <div class="input-container">
-                            <span>Business E-mail (optional)</span><br>
-                            <input name="business-email" type="email" placeholder="example@gmail.com">
-                        </div>
-                        <button class="btn return">Go back</button>
-                    </form>
-                    
-                    <form class="submit-form" action="dashboard.html">
-                        <button class="btn sign-up" type="submit">Sign Up</button>
-                    </form>
+                        <form name="business-sign-up-form" action="/JS/sign-up.js" class="business-form text-form" onsubmit='return false;'>
+                            <div class="input-container">
+                                <span>Business Name</span><br>
+                                <input name="business-name" type="text">
+                            </div>
+                            <div class="input-container">
+                                <span>Business Address</span><br>
+                                <input name="business-address" type="text">
+                            </div>
+                            <div class="input-container">
+                                <span>Business E-mail (optional)</span><br>
+                                <input name="business-email" type="email" placeholder="example@gmail.com">
+                            </div>
+                            <button class="btn return">Go back</button>
+                        </form>
+                        
+                        <form class="submit-form" action="dashboard.html">
+                            <button class="btn sign-up" type="submit">Sign Up</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
