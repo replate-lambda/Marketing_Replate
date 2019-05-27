@@ -477,6 +477,12 @@ span {
     height: 1150px;
   }
 }
+@media (max-width: 500px) {
+  .dashboard-container {
+    width: 100%;
+    border: 0;
+  }
+}
 .dashboard-container header {
   height: 160px;
   background: #515657;
@@ -601,6 +607,11 @@ span {
   align-items: center;
   padding: 10px;
 }
+@media (max-width: 500px) {
+  .donation-content {
+    justify-content: center;
+  }
+}
 .calendar-h3 {
   font-size: 3rem;
   padding: 10px 20px;
@@ -695,9 +706,13 @@ span {
   border: 3px outset #8d9a39;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.selector-container span {
-  font-size: 2rem;
+@media (max-width: 500px) {
+  .selector-container {
+    width: 70px;
+    height: 70px;
+  }
 }
 .selector-container p {
   font-size: 2rem;
@@ -719,6 +734,13 @@ span {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .icon-container {
+    width: 60px;
+    height: 60px;
+    margin: 0;
+  }
+}
 .icon-container:hover {
   background-color: #dbddcf;
 }
@@ -726,4 +748,12 @@ span {
   font-size: 3rem;
   font-weight: bolder;
   color: #515657;
+}
+.icon-container .create-icon:hover {
+  color: #c8232a;
+}
+@media (max-width: 500px) {
+  .icon-container .create-icon {
+    font-size: 5rem;
+  }
 }
